@@ -17,7 +17,9 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
   inputs:
-    SourceFolder: src/ARMTemplates
+    SourceFolder: $(Build.SourcesDirectory)
+    Contents:
+      src\ARMTemplates\*
     TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
 - task: PublishBuildArtifacts@1
