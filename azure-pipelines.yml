@@ -1,10 +1,5 @@
-# Python package
-# Create and test a Python package on multiple Python versions.
-# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
-
 trigger:
-- master
+- Dev
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -15,14 +10,3 @@ strategy:
 
 steps:
 - task: CopyFiles@2
-  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
-  inputs:
-    SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents:
-      src\ARMTemplates\*
-    TargetFolder: '$(build.artifactstagingdirectory)'
-    OverWrite: true
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: ARMTemplates'
-  inputs:
-    ArtifactName: ARMTemplates
