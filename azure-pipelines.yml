@@ -11,7 +11,7 @@ strategy:
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(system.defaultworkingdirectory)'
+    SourceFolder: '/home/vsts/work/1/s/src/ARMTemplates/'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
