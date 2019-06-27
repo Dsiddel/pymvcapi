@@ -10,8 +10,3 @@ strategy:
 
 steps:
 - task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(system.defaultworkingdirectory)/src/ARMTemplates/'
-    Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-    OverWrite: true
