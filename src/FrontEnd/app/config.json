@@ -1,0 +1,6 @@
+{
+    "CONNECTIONSTRING": "connstringexample",
+    "SECRET_KEY": "development key",
+    "SQLALCHEMY_DATABASE_URI": "sqlite:///app.db",
+    "SQLALCHEMY_TRACK_MODIFICATIONS": false
+}
