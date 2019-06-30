@@ -8,7 +8,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-#Python Virtualenvironment Folder
+#Python Virtualenvironment Folder and db
 venv
 
 # User-specific files (MonoDevelop/Xamarin Studio)
