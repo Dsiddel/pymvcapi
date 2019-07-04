@@ -6,9 +6,10 @@
     "MAIL_SERVER": "smtp.googlemail.com",
     "MAIL_PORT": "587",
     "MAIL_USE_TLS": "1",
-    "MAIL_USERNAME": "dsiddel87@gmail.com",
-    "MAIL_PASSWORD": "Pinkcat34!",
-    "ADMINS": "dsiddel@live.com",
+    "MAIL_USERNAME": "",
+    "MAIL_PASSWORD": "",
+    "ADMINS": "",
     "POSTS_PER_PAGE": 3,
-    "LANGUAGES": ["en", "es"]
+    "LANGUAGES": ["en", "es"],
+    "MS_TRANSLATOR_KEY": ""
 }
