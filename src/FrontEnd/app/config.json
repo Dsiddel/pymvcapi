@@ -8,5 +8,6 @@
     "MAIL_USE_TLS": "1",
     "MAIL_USERNAME": "",
     "MAIL_PASSWORD": "",
-    "ADMINS": ""
+    "ADMINS": "",
+    "POSTS_PER_PAGE": 3
 }
