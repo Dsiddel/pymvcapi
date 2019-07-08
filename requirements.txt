@@ -1,6 +1,6 @@
 flask
 python-dotenv
-flask-wtfpytho
+flask-wtf
 flask-sqlalchemy
 flask-migrate
 flask-login
@@ -10,3 +10,4 @@ flask-moment
 flask-babel
 guess_language-spirit
 requests
+jwt

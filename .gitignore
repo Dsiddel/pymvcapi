@@ -10,7 +10,7 @@
 *.sln.docstates
 #Python Virtualenvironment Folder and db
 venv
-
+/src/FrontEnd/Logs/*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
