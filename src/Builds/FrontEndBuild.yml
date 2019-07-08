@@ -2,16 +2,17 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(System.DefaultWorkingDirectory)/'
+    fileType: 'json'
+    targetFiles: '/src/FrontEnd/app/config.json'
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)/src/FrontEnd/'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
-- task: FileTransform@1
-  inputs:
-    folderPath: '$(System.DefaultWorkingDirectory)/src/FrontEnd/app/config.json'
-    fileType: 'json'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
