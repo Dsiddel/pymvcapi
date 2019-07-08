@@ -10,9 +10,8 @@ steps:
     OverWrite: true
 - task: FileTransform@1
   inputs:
-    folderPath: '$(System.DefaultWorkingDirectory)/'
+    folderPath: '$(System.DefaultWorkingDirectory)/src/FrontEnd/app/config.json'
     fileType: 'json'
-    targetFiles: '/src/FrontEnd/app/config.json'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
