@@ -1,15 +1,15 @@
 {
     "CONNECTIONSTRING": "connstringexample",
     "SECRET_KEY": "development key",
-    "SQLALCHEMY_DATABASE_URI": "",
+    "SQLALCHEMY_DATABASE_URI": "asd",
     "SQLALCHEMY_TRACK_MODIFICATIONS": false,
     "MAIL_SERVER": "smtp.googlemail.com",
     "MAIL_PORT": "587",
     "MAIL_USE_TLS": "1",
-    "MAIL_USERNAME": "",
-    "MAIL_PASSWORD": "",
-    "ADMINS": "",
+    "MAIL_USERNAME": "asd",
+    "MAIL_PASSWORD": "asd",
+    "ADMINS": "asd",
     "POSTS_PER_PAGE": 3,
     "LANGUAGES": ["en", "es"],
-    "MS_TRANSLATOR_KEY": ""
+    "MS_TRANSLATOR_KEY": "asd"
 }
