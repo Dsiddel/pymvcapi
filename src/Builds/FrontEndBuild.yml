@@ -8,13 +8,13 @@ steps:
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(System.DefaultWorkingDirectory)/'
+    fileType: 'json'
+    targetFiles: '/src/FrontEnd/app/config.json'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'FrontEnd'
     publishLocation: 'Container'
-- task: FileTransform@1
-  inputs:
-    folderPath: '$(System.DefaultWorkingDirectory)/'
-    fileType: 'json'
-    targetFiles: '/src/FrontEnd/app/confiasdg.json'
